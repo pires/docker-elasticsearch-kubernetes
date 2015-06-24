@@ -1,4 +1,4 @@
-FROM quay.io/pires/docker-elasticsearch:1.5.2
+FROM quay.io/pires/docker-elasticsearch:1.6.0
 
 MAINTAINER pjpires@gmail.com
 
@@ -6,4 +6,4 @@ MAINTAINER pjpires@gmail.com
 ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
 # Install Elasticsearch plug-ins
-RUN /elasticsearch/bin/plugin -i io.fabric8/elasticsearch-cloud-kubernetes/1.2.0 --verbose
+RUN /elasticsearch/bin/plugin -i io.fabric8/elasticsearch-cloud-kubernetes/1.2.1 --verbose
