@@ -10,3 +10,6 @@ RUN /elasticsearch/bin/plugin -i io.fabric8/elasticsearch-cloud-kubernetes/1.3.0
 
 # Override elasticsearch.yml config, otherwise plug-in install will fail
 ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
+
+# Copy run script
+COPY run.sh /
