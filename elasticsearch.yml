@@ -1,2 +1,24 @@
+cluster:
+  name: ${CLUSTER_NAME}
+  
+node:
+  master: ${NODE_MASTER}
+  data: ${NODE_DATA}
+
 path:
+  data: /data/data
+  logs: /data/log
   plugins: /elasticsearch/plugins
+  work: /data/work
+
+bootstrap.mlockall: true
+
+http.enabled: ${HTTP_ENABLE}
+
+cloud:
+  k8s:
+    service: ${DISCOVERY_SERVICE}
+    namespace: ${NAMESPACE}
+discovery:
+  type: io.fabric8.elasticsearch.discovery.k8s.K8sDiscoveryModule
+  zen.ping.multicast.enabled: false
