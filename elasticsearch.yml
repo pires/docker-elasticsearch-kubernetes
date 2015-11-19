@@ -5,6 +5,9 @@ node:
   master: ${NODE_MASTER}
   data: ${NODE_DATA}
 
+security.manager.enabled: false
+network.host: _non_loopback:ipv4_
+
 path:
   data: /data/data
   logs: /data/log
@@ -16,9 +19,9 @@ bootstrap.mlockall: true
 http.enabled: ${HTTP_ENABLE}
 
 cloud:
-  k8s:
+  kubernetes:
     service: ${DISCOVERY_SERVICE}
     namespace: ${NAMESPACE}
 discovery:
-  type: io.fabric8.elasticsearch.discovery.k8s.K8sDiscoveryModule
-  zen.ping.multicast.enabled: false
+    type: kubernetes
+    zen.ping.multicast.enabled: false
