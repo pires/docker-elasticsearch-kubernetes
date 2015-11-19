@@ -6,14 +6,27 @@ Ready to use lean (210MB) Elasticsearch Docker image ready for using within a Ku
 
 ## Current software
 
-* Oracle JRE 8 Update 60
-* Elasticsearch 1.7.2
-* Kubernetes plug-in 1.3.0
+* Oracle JRE 8 Update 66
+* Elasticsearch 2.0.0
+* Kubernetes plug-in 2.0.2
 
 ## Pre-requisites
 
 * Docker 1.7.0+
+* Kubernetes 1.0+
+* Google Container Engine - Kubernetes 1.1+
 
 ## Run
 
 See [pires/kubernetes-elasticsearch-cluster](https://github.com/pires/kubernetes-elasticsearch-cluster) for instructions on how to run, scale and use Elasticsearch on Kubernetes.
+
+## Release Notes
+
+* 2.0.0
+ - Upgrades to Elasticsearch 2.0.0
+ - Upgrades to Kubernetes Plugin 2.0.2
+ - Runs under elasticsearch user
+ - Set ulimit to support memlock
+ - Disables Security Manager to enable Kubernetes plugin
+  * access to networking
+  * access to filesystem for secrets and configuration paths

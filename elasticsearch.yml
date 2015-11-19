@@ -15,10 +15,12 @@ bootstrap.mlockall: true
 
 http.enabled: ${HTTP_ENABLE}
 
+security.manager.enabled: false
+
 cloud:
-  k8s:
+  kubernetes:
     service: ${DISCOVERY_SERVICE}
     namespace: ${NAMESPACE}
 discovery:
-  type: io.fabric8.elasticsearch.discovery.k8s.K8sDiscoveryModule
+  type: kubernetes
   zen.ping.multicast.enabled: false
