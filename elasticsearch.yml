@@ -23,5 +23,5 @@ cloud:
     service: ${DISCOVERY_SERVICE}
     namespace: ${NAMESPACE}
 discovery:
-    type: kubernetes
-    zen.ping.multicast.enabled: false
+  type: io.fabric8.elasticsearch.discovery.k8s.K8sDiscoveryModule
+  zen.ping.multicast.enabled: false
