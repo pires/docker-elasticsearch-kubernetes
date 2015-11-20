@@ -1,6 +1,6 @@
 # docker-elasticsearch-kubernetes
 
-Ready to use lean (210MB) Elasticsearch Docker image ready for using within a Kubernetes cluster.
+Ready to use lean (208MB) Elasticsearch Docker image ready for using within a Kubernetes cluster.
 
 [![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-elasticsearch-kubernetes/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-elasticsearch-kubernetes)
 
@@ -10,9 +10,8 @@ Ready to use lean (210MB) Elasticsearch Docker image ready for using within a Ku
 * Elasticsearch 2.0.0
 * Kubernetes plug-in 2.0.2
 
-## Pre-requisites
+## Tested with
 
-* Docker 1.7.0+
 * Kubernetes 1.0+
 * Google Container Engine - Kubernetes 1.1+
 
