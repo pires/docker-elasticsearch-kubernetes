@@ -27,5 +27,5 @@ cloud:
     service: ${DISCOVERY_SERVICE}
     namespace: ${NAMESPACE}
 discovery:
-    type: kubernetes
-    zen.ping.multicast.enabled: false
+  type: kubernetes
+  zen.ping.multicast.enabled: false
