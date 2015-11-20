@@ -16,7 +16,11 @@ path:
 
 bootstrap.mlockall: true
 
-http.enabled: ${HTTP_ENABLE}
+http:
+  enabled: ${HTTP_ENABLE}
+  compression: true
+  cors:
+    enabled: true
 
 cloud:
   kubernetes:
