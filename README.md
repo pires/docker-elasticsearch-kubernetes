@@ -1,14 +1,14 @@
 # docker-elasticsearch-kubernetes
 
-Ready to use lean (207MB) Elasticsearch Docker image ready for using within a Kubernetes cluster.
+Ready to use lean (208MB) Elasticsearch Docker image ready for using within a Kubernetes cluster.
 
 [![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-elasticsearch-kubernetes/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-elasticsearch-kubernetes)
 
 ## Current software
 
 * Oracle JRE 8 Update 66
-* Elasticsearch 2.0.0
-* Kubernetes plug-in 2.0.2
+* Elasticsearch 2.1.0
+* Kubernetes discovery plug-in 2.1.0
 
 ## Run
 
