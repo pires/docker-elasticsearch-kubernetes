@@ -10,6 +10,22 @@ Ready to use lean (208MB) Elasticsearch Docker image ready for using within a Ku
 * Elasticsearch 2.1.0
 * Kubernetes discovery plug-in 2.1.0
 
+## Tested with
+
+* Kubernetes 1.0+
+* Google Container Engine - Kubernetes 1.1+
+
 ## Run
 
 See [pires/kubernetes-elasticsearch-cluster](https://github.com/pires/kubernetes-elasticsearch-cluster) for instructions on how to run, scale and use Elasticsearch on Kubernetes.
+
+## Release Notes
+
+* 2.0.0
+ - Upgrades to Elasticsearch 2.0.0
+ - Upgrades to Kubernetes Plugin 2.0.2
+ - Runs under elasticsearch user
+ - Set ulimit to support memlock
+ - Disables Security Manager to enable Kubernetes plugin
+  * access to networking
+  * access to filesystem for secrets and configuration paths
