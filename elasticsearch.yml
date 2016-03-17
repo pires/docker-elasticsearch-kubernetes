@@ -5,7 +5,7 @@ node:
   master: ${NODE_MASTER}
   data: ${NODE_DATA}
 
-network.host: _non_loopback:ipv4_
+network.host: _site_
 
 path:
   data: /data/data
