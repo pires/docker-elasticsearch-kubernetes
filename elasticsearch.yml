@@ -5,7 +5,6 @@ node:
   master: ${NODE_MASTER}
   data: ${NODE_DATA}
 
-security.manager.enabled: false
 network.host: _non_loopback:ipv4_
 
 path:
