@@ -20,6 +20,7 @@ http:
   compression: true
   cors:
     enabled: ${HTTP_CORS_ENABLE}
+    allow-origin: ${HTTP_CORS_ALLOW_ORIGIN}
 
 cloud:
   kubernetes:
