@@ -28,4 +28,3 @@ cloud:
     namespace: ${NAMESPACE}
 discovery:
     type: kubernetes
-    zen.ping.multicast.enabled: false
