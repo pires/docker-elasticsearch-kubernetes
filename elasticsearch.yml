@@ -28,3 +28,7 @@ cloud:
     namespace: ${NAMESPACE}
 discovery:
     type: kubernetes
+
+index:
+    number_of_shards: ${NUMBER_OF_SHARDS}
+    number_of_replicas: ${NUMBER_OF_REPLICAS}
