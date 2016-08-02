@@ -14,6 +14,8 @@ export NODE_DATA=${NODE_DATA:-true}
 export HTTP_ENABLE=${HTTP_ENABLE:-true}
 export NETWORK_HOST=${NETWORK_HOST:-_site_}
 export ES_HEAP_SIZE=${ES_HEAP_SIZE:-512m}
+export NUMBER_OF_SHARDS=${NUMBER_OF_SHARDS:-1}
+export NUMBER_OF_REPLICAS=${NUMBER_OF_REPLICAS:-0}
 
 # Kubernetes stuff
 export NAMESPACE=${NAMESPACE:-default}

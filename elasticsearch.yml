@@ -18,12 +18,6 @@ bootstrap.mlockall: true
 http:
   enabled: ${HTTP_ENABLE}
   compression: true
-  # This section can prevent Kibana from being able to contact Elasticsearch.
-  # According to this issue https://github.com/elastic/kibana/issues/6719 it
-  # is not necessary and should be removed.
-  # cors:
-  #   enabled: ${HTTP_CORS_ENABLE}
-  #   allow-origin: ${HTTP_CORS_ALLOW_ORIGIN}
 
 cloud:
   kubernetes:
@@ -32,3 +26,7 @@ cloud:
 
 discovery:
     type: kubernetes
+
+index:
+    number_of_shards: ${NUMBER_OF_SHARDS}
+    number_of_replicas: ${NUMBER_OF_REPLICAS}
