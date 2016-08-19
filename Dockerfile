@@ -11,5 +11,6 @@ RUN /elasticsearch/bin/plugin install io.fabric8/elasticsearch-cloud-kubernetes/
 # Override elasticsearch.yml config, otherwise plug-in install will fail
 ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
-# Copy run script
-COPY run.sh /
+# Set environment
+ENV NAMESPACE default
+ENV DISCOVERY_SERVICE elasticsearch-discovery
