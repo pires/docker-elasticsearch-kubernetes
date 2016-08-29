@@ -27,7 +27,9 @@ cloud:
     service: ${DISCOVERY_SERVICE}
     namespace: ${NAMESPACE}
 discovery:
-    type: kubernetes
+  type: kubernetes
+  zen:
+    minimum_master_nodes: ${NUMBER_OF_MASTERS}
 
 index:
     number_of_shards: ${NUMBER_OF_SHARDS}
