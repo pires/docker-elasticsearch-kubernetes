@@ -14,3 +14,16 @@ ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 # Set environment
 ENV NAMESPACE default
 ENV DISCOVERY_SERVICE elasticsearch-discovery
+ENV ES_HEAP_SIZE 512m
+ENV CLUSTER_NAME elasticsearch-default
+ENV NODE_MASTER true
+ENV NODE_DATA true
+ENV HTTP_ENABLE true
+ENV NETWORK_HOST _site_
+ENV HTTP_CORS_ENABLE true
+ENV HTTP_CORS_ALLOW_ORIGIN *
+ENV NUMBER_OF_SHARDS 1
+ENV NUMBER_OF_REPLICAS 0
+ENV MINIMUM_MASTER_NODES 1
+
+CMD ["/run.sh"]
