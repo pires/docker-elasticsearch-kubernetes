@@ -7,8 +7,8 @@ Ready to use lean (146MB) Elasticsearch Docker image ready for using within a Ku
 ## Current software
 
 * OpenJDK JRE 8u92
-* Elasticsearch 2.4.0
-* Kubernetes discovery plug-in 2.4.0_01
+* Elasticsearch 2.4.1
+* Kubernetes discovery plug-in 2.4.1
 
 ## Run
 
