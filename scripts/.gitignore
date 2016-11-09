@@ -1,0 +1,7 @@
+ca/
+certs/
+crl/
+*.jks
+*.p12
+*.pem
+*.csr

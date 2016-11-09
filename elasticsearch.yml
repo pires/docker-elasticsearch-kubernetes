@@ -13,7 +13,9 @@ path:
   plugins: /elasticsearch/plugins
   work: /data/work
 
-bootstrap.mlockall: true
+bootstrap:
+  memory_lock: true
+  ignore_system_bootstrap_checks: true
 
 http:
   enabled: ${HTTP_ENABLE}
@@ -24,13 +26,30 @@ http:
 
 cloud:
   kubernetes:
-    service: ${DISCOVERY_SERVICE}
+    service: ${SERVICE}
     namespace: ${NAMESPACE}
 discovery:
   type: kubernetes
   zen:
     minimum_master_nodes: ${NUMBER_OF_MASTERS}
 
+plugin.mandatory: discovery-kubernetes
+
 index:
     number_of_shards: ${NUMBER_OF_SHARDS}
     number_of_replicas: ${NUMBER_OF_REPLICAS}
+
+searchguard:
+  ssl:
+    transport:
+      keystore_filepath: node-keystore.jks
+      keystore_password: changeit
+      truststore_filepath: truststore.jks
+      truststore_password: changeit
+      enforce_hostname_verification: false
+    http:
+      enabled: true
+      keystore_filepath: node-keystore.jks
+      keystore_password: changeit
+      truststore_filepath: truststore.jks
+      truststore_password: changeit

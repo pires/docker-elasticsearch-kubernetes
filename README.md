@@ -1,14 +1,16 @@
 # docker-elasticsearch-kubernetes
 
-Ready to use lean (146MB) Elasticsearch Docker image ready for using within a Kubernetes cluster.
+Ready to use lean (154MB) Elasticsearch Docker image ready for using within a Kubernetes cluster.
 
 [![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-elasticsearch-kubernetes/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-elasticsearch-kubernetes)
 
 ## Current software
 
 * OpenJDK JRE 8u92
-* Elasticsearch 2.4.1
-* Kubernetes discovery plug-in 2.4.1
+* Elasticsearch 5.0.0
+* Kubernetes discovery plug-in 5.0.0
+* kopf elasticsearch web administration tool (https://github.com/lmenezes/elasticsearch-kopf)
+* Search Guard SSL for Elasticsearch (https://github.com/floragunncom/search-guard-ssl)
 
 ## Run
 
@@ -22,3 +24,7 @@ Besides the [inherited ones](https://github.com/pires/docker-elasticsearch#envir
 
 * [DISCOVERY_SERVICE](https://github.com/fabric8io/elasticsearch-cloud-kubernetes#kubernetes-pod-discovery)
 * [NAMESPACE](https://github.com/fabric8io/elasticsearch-cloud-kubernetes#kubernetes-pod-discovery)
+
+## TLS
+
+TLS is enabled by default in the image utilizing the Search Guard SSL for Elasticsearch by floragunn. To enable simply make some certs by running the `scripts/make-certs.sh` script before building. 
