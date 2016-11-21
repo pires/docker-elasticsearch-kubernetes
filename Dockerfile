@@ -1,4 +1,4 @@
-FROM quay.io/pires/docker-elasticsearch:5.0.0
+FROM quay.io/pires/docker-elasticsearch:5.0.1_2
 
 MAINTAINER pjpires@gmail.com
 
@@ -6,7 +6,7 @@ MAINTAINER pjpires@gmail.com
 ADD do_not_use.yml /elasticsearch/config/elasticsearch.yml
 
 # Install Elasticsearch plug-ins
-RUN /elasticsearch/bin/elasticsearch-plugin install io.fabric8:elasticsearch-cloud-kubernetes:5.0.0
+RUN /elasticsearch/bin/elasticsearch-plugin install io.fabric8:elasticsearch-cloud-kubernetes:5.0.1
 
 # Override elasticsearch.yml config, otherwise plug-in install will fail
 ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
