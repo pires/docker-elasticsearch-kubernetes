@@ -5,9 +5,6 @@ MAINTAINER pjpires@gmail.com
 # Override elasticsearch.yml config, otherwise plug-in install will fail
 ADD do_not_use.yml /elasticsearch/config/elasticsearch.yml
 
-# Install Elasticsearch plug-ins
-RUN /elasticsearch/bin/elasticsearch-plugin install io.fabric8:elasticsearch-cloud-kubernetes:5.1.1 --verbose
-
 # Override config, otherwise plug-in install will fail
 ADD config /elasticsearch/config
 
