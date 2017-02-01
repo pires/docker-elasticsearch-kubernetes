@@ -1,4 +1,4 @@
-FROM quay.io/pires/docker-elasticsearch:5.1.2
+FROM quay.io/pires/docker-elasticsearch:5.2.0
 
 MAINTAINER pjpires@gmail.com
 
