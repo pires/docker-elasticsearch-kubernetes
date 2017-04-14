@@ -15,5 +15,4 @@ RUN ./elasticsearch/bin/elasticsearch-plugin install -b com.floragunn:search-gua
 RUN ./elasticsearch/bin/elasticsearch-plugin install repository-s3
 
 # Set environment
-ENV NAMESPACE default 
 ENV DISCOVERY_SERVICE elasticsearch-discovery
