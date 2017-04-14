@@ -6,5 +6,4 @@ MAINTAINER pjpires@gmail.com
 ADD config /elasticsearch/config
 
 # Set environment
-ENV NAMESPACE default
 ENV DISCOVERY_SERVICE elasticsearch-discovery
