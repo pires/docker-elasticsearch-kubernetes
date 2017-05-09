@@ -43,3 +43,7 @@ searchguard:
       keystore_password: changeit
       truststore_filepath: certs/truststore.jks
       truststore_password: changeit
+
+metrics:
+  statsd:
+    host: ${STATSD_HOST}
