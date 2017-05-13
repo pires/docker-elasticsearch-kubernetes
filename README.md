@@ -19,4 +19,5 @@ This image can be configured by means of environment variables, that one can set
 
 Besides the [inherited ones](https://github.com/pires/docker-elasticsearch#environment-variables), this container image provides the following:
 
-* `DISCOVERY_SERVICE` - the service to be queried for through DNS.
+* [DISCOVERY_SERVICE](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-discovery-zen.html#unicast) - the service to be queried for through DNS (default = `elasticsearch-discovery`).
+* [MEMORY_LOCK](https://www.elastic.co/guide/en/elasticsearch/reference/current/important-settings.html#bootstrap.memory_lock) - memory locking control defaults to `false` as Kubernetes requires swap to be disabled.

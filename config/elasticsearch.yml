@@ -15,7 +15,7 @@ path:
   logs: /data/log
 
 bootstrap:
-  memory_lock: true
+  memory_lock: ${MEMORY_LOCK}
 
 http:
   enabled: ${HTTP_ENABLE}
