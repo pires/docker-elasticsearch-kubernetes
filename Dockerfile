@@ -8,6 +8,8 @@ ADD config /elasticsearch/config
 # Set environment
 ENV DISCOVERY_SERVICE elasticsearch-discovery
 ENV STATSD_HOST=statsd.statsd.svc.cluster.local
+ENV SEARCHGUARD_SSL_TRANSPORT_ENABLED=true
+ENV SEARCHGUARD_SSL_HTTP_ENABLED=true
 
 # Fix bug installing plugins
 ENV NODE_NAME=""
