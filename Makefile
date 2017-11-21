@@ -3,12 +3,12 @@
 
 .PHONY: all container push
 
-TAG ?= 5.3.1_3
+TAG ?= 5.6.4_0
 PREFIX ?= upmcenterprises
 
 all: container
 
-container: 
+container:
 	docker build -t $(PREFIX)/docker-elasticsearch-kubernetes:$(TAG) .
 
 push:

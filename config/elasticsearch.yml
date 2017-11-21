@@ -39,7 +39,7 @@ searchguard:
       enforce_hostname_verification: false
       enabled: ${SEARCHGUARD_SSL_TRANSPORT_ENABLED}
     http:
-      enabled: ${SEARCHGUARD_SSL_HTTP_ENABLED} 
+      enabled: ${SEARCHGUARD_SSL_HTTP_ENABLED}
       keystore_filepath: certs/node-keystore.jks
       keystore_password: changeit
       truststore_filepath: certs/truststore.jks
