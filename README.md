@@ -7,7 +7,7 @@ Ready to use, lean Elasticsearch Docker image ready for using within a Kubernete
 ## Current software
 
 * OpenJDK JRE 8u131
-* Elasticsearch 5.6.4
+* Elasticsearch 6.0.0
 
 ## Run
 
