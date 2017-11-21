@@ -1,4 +1,4 @@
-FROM quay.io/pires/docker-elasticsearch:5.3.1
+FROM quay.io/pires/docker-elasticsearch:5.6.4
 
 MAINTAINER pjpires@gmail.com
 
@@ -18,10 +18,10 @@ ENV NODE_NAME=""
 RUN ./elasticsearch/bin/elasticsearch-plugin install mapper-attachments
 
 # Install search-guard-ssl
-RUN ./elasticsearch/bin/elasticsearch-plugin install -b com.floragunn:search-guard-ssl:5.3.1-21
+RUN ./elasticsearch/bin/elasticsearch-plugin install -b com.floragunn:search-guard-ssl:5.6.4-23
 
 # Install s3 repository plugin
 RUN ./elasticsearch/bin/elasticsearch-plugin install repository-s3
 
 # Install statsd plugin
-RUN ./elasticsearch/bin/elasticsearch-plugin install http://repo1.maven.org/maven2/com/automattic/elasticsearch-statsd/5.3.1.0/elasticsearch-statsd-5.3.1.0.zip
+RUN ./elasticsearch/bin/elasticsearch-plugin install https://github.com/Automattic/elasticsearch-statsd-plugin/releases/download/5.6.4.0/elasticsearch-statsd-5.6.4.0.zip
