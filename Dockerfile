@@ -15,13 +15,13 @@ ENV SEARCHGUARD_SSL_HTTP_ENABLED=true
 ENV NODE_NAME=""
 
 # Install mapper-attachments (https://www.elastic.co/guide/en/elasticsearch/plugins/5.x/mapper-attachments.html)
-RUN ./elasticsearch/bin/elasticsearch-plugin install mapper-attachments
+RUN ./bin/elasticsearch-plugin install mapper-attachments
 
 # Install search-guard-ssl
-RUN ./elasticsearch/bin/elasticsearch-plugin install -b com.floragunn:search-guard-ssl:5.6.4-23
+RUN ./bin/elasticsearch-plugin install -b com.floragunn:search-guard-ssl:5.6.4-23
 
 # Install s3 repository plugin
-RUN ./elasticsearch/bin/elasticsearch-plugin install repository-s3
+RUN ./bin/elasticsearch-plugin install repository-s3
 
 # Install statsd plugin
-RUN ./elasticsearch/bin/elasticsearch-plugin install https://github.com/Automattic/elasticsearch-statsd-plugin/releases/download/5.6.4.0/elasticsearch-statsd-5.6.4.0.zip
+RUN ./bin/elasticsearch-plugin install https://github.com/Automattic/elasticsearch-statsd-plugin/releases/download/5.6.4.0/elasticsearch-statsd-5.6.4.0.zip
