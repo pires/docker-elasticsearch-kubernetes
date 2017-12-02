@@ -43,4 +43,4 @@ set_set_es_java_opts() {
 }
 
 set_set_es_java_opts
-exec "$@"
+exec /run1.sh "$@"

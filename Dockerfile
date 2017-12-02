@@ -7,9 +7,10 @@ ADD config /elasticsearch/config
 
 # Set environment
 ENV DISCOVERY_SERVICE elasticsearch-discovery
+ENV REPO_LOCATIONS []
 
 # Kubernetes requires swap is turned off, so memory lock is redundant
 ENV MEMORY_LOCK false
 
-COPY entrypoint.sh /
-ENTRYPOINT ["/entrypoint.sh"]
+RUN mv /run.sh /run1.sh
+COPY run.sh /
