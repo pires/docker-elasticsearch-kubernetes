@@ -3,7 +3,7 @@
 
 .PHONY: all container push
 
-TAG ?= 5.6.4_0
+TAG ?= 5.6.4_1
 PREFIX ?= upmcenterprises
 
 all: container

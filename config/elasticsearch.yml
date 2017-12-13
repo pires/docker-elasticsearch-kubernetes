@@ -14,9 +14,6 @@ path:
   data: /data/data
   logs: /data/log
 
-bootstrap:
-  memory_lock: true
-
 http:
   enabled: ${HTTP_ENABLE}
   compression: true
@@ -28,6 +25,9 @@ discovery:
   zen:
     ping.unicast.hosts: ${DISCOVERY_SERVICE}
     minimum_master_nodes: ${NUMBER_OF_MASTERS}
+    
+bootstrap:
+  memory_lock: ${MEMORY_LOCK}
 
 searchguard:
   ssl:
