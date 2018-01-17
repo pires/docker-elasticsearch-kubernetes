@@ -8,6 +8,8 @@ node:
   ingest: ${NODE_INGEST}
   max_local_storage_nodes: ${MAX_LOCAL_STORAGE_NODES}
 
+processors: ${PROCESSORS:1}
+
 network.host: ${NETWORK_HOST}
 
 path:
