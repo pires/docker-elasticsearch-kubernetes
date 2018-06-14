@@ -9,6 +9,8 @@ Ready to use, lean Elasticsearch Docker image ready for using within a Kubernete
 * OpenJDK JRE 8u151
 * Elasticsearch 6.3.0
 
+**Note:** `x-pack-ml` module is forcibly disabled as it's not supported on Alpine Linux.
+
 ## Run
 
 See [pires/kubernetes-elasticsearch-cluster](https://github.com/pires/kubernetes-elasticsearch-cluster) for instructions on how to run, scale and use Elasticsearch on Kubernetes.
